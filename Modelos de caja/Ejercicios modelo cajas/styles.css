@@ -1,0 +1,32 @@
+.block {
+  display: block;
+  width: 200px;
+  background-color: rgb(22, 25, 218);
+  margin: 20px 0;
+  padding: 30px;
+}
+.inline {
+  display: inline;
+  background-color: rgb(29, 218, 22);
+  margin: 20px 0;
+  width: 50px;
+  height: 500px;
+}
+.inline-block {
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  background-color: rgb(22, 179, 218);
+  list-style: none;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(95, 99, 99);
+  padding: 10px;
+}
+.flex-item {
+  background-color: brown;
+  margin: 10px;
+  padding: 10px;
+}
