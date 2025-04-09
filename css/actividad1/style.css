@@ -10,6 +10,8 @@
   /*height: 250px; /*el tamaño del largo*/
   display: flex;
   align-items: flex-start;
+  
+  
 }
 
 img {
@@ -17,6 +19,7 @@ img {
 }
 .texto {
   background-color: rgb(122, 116, 116);
+  border-radius: 5px;
 
   width: 70%;
 }
