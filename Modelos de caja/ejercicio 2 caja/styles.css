@@ -36,11 +36,14 @@
 .tamaño {
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif; /*tipografia*/
+  color: rgb(247, 253, 254); /*modifica el color de la letra*/
+
 }
 .centrarvol{
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif; /*tipografia*/
   flex-direction: column;/*sigue la direccion que tengamos*/
   justify-content: center;/*para que este centrado*/
+  margin: -47px;
   
 }
