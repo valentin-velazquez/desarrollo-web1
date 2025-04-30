@@ -1,5 +1,6 @@
 body{
     background-image: url("https://assets.pokemon.com//assets/cms2-es-es/img/misc/virtual-backgrounds/masters/arena.jpg") ;
+    width: 100%;
 }
 
 .grilla{
@@ -94,6 +95,10 @@ img{
     height: 500px;
     width: 400px;
     border-radius: 8px;
+    transition: transform 0.35s (0.075, 0.82, 0.165, 1);7
+}
+.contenedorsquirle:hover{
+    transform: translateY(-10px);
 }
 
 
