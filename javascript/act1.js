@@ -28,3 +28,36 @@ for (let i = 1; i <= 20; i++) {
     }
 }
 console.log("La suma de los numeros que son multiplo de 3 y no de 5 es:", suma);
+
+
+
+
+//ACTIVIDAD 4 -7/05
+
+const inventario = [];
+inventario.push({producto: "hamburguesa", precio: 6000, categoria: "comida"},
+               {producto: "pc", precio: 10000, categoria: "Electronica"},
+               {producto: "celular", precio: 7000, categoria: "Electronica"},
+               {producto: "ludo", precio: 2000, categoria: "juego"}
+)
+console.log("agrego", inventario);
+
+//-----------------------------------------------------------------------------------------//
+// forEach
+// solo recorre, no guarda en ningun lado
+inventario.forEach((item, index) => {
+    console.log('elemento', item, 'index', index)
+})
+
+
+
+// ------------------------------------------------------------------------------------------------
+const elemnelec = inventario.filter((item)=> item.categoria === "Electronica");
+console.log(elemnelec);
+
+// ----------------------------------------------------------------------------------------------------
+const productos = inventario.map((item)=>{
+    return item.producto
+});
+
+console.log(productos)
