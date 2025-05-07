@@ -61,3 +61,9 @@ const productos = inventario.map((item)=>{
 });
 
 console.log(productos)
+// ------------------------------------------------------------------------------------------------------
+inventario.push({titulo: "Eleternauta", director: 6000, año: "comida", genero: ""},
+                         {titulo: "losminions", director: 10000, año: "Electronica", genero: ""},
+                    {titulo: "horacero", director: 7000, año: "Electronica", genero:""},
+                       {titulo: "wiplash", director: 2000, año: "juego", genero: "suspenso"}
+)
