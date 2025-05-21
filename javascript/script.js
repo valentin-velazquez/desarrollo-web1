@@ -92,7 +92,7 @@ for(let i=0;  i < miArreglo.length; i++){
 
 
 // push ()valor --> agrega un elemento al final 
-//equivalente al appendde py
+//equivalente al append de py
 miArreglo.push("nicolas");
 console.log("cadena", miArreglo);
 
