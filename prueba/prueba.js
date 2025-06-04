@@ -9,7 +9,7 @@
 
 
 //¿Qué hace el método .forEach() en un array y qué devuelve?
-//lo que hace el forEach es que recorre el array y no retorna nada.
+//lo que hace el forEach es que recorre el array y no guarda nada.
 
 
 
