@@ -1,0 +1,128 @@
+🧠 PARTE TEÓRICA
+¿Qué diferencia hay entre for y forEach a nivel funcionamiento?
+
+
+¿Qué es una función de flecha (arrow function)? ¿En qué se diferencia de una función tradicional?
+
+
+¿Qué hace el método .forEach() en un array y qué devuelve?
+
+
+¿Qué método de arrays se usa para eliminar el último elemento de un array?
+
+
+
+💻 PARTE PRÁCTICA
+🧪 Ejercicio 1: 
+Dado el siguiente arreglo de objetos productos:
+const productos = [
+  { nombre: "Notebook", precio: 800 },
+  { nombre: "Celular", precio: 500 },
+  { nombre: "Teclado", precio: 50 },
+];
+
+
+🔹 Recorre el arreglo e imprimí en consola si cada producto es caro (precio mayor a 300) o barato.
+🔹 Crea una función llamada obtenerPrecioPromedio que reciba el arreglo y devuelva el promedio de precios.
+
+🧪 Ejercicio 2: map, filter, DOM
+Usando el mismo arreglo productos:
+🔹 En base al arreglo productos crear un nuevo arreglo con productos que cuesten más de $100 (con el método correspondiente). 
+🔹 Al igual que en el punto anterior crear un arreglo con los nombres de los productos en minúsculas. (consultar al momento de llegar a este punto)
+🔹 En el HTML hay un contenedor con id "productos".
+Usando JavaScript:
+<div id="productos"></div>
+
+
+Capturá el elemento del DOM.
+
+
+Creá un <ul> con cada producto (nombre y precio) como <li>.
+
+
+Agregalo al contenedor. (ayudenme)(porfavor)(.-.-...-.-.-..-..---.-.--.--.--.-.-...-.-.-.---.-.-..-.-)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Conversación abierta. 1 mensaje no leído.
+
+Ir al contenido
+Cómo usar Gmail con lectores de pantalla
+1 de 1,197
+(sin asunto)
+Recibidos
+Lucia Acuña
+	
+1:59 p.m. (hace 5 minutos)
+	
+para mí
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Productos</title>
+</head>
+<body>
+  <h2>Productos con precio mayor a $100</h2>
+  <div id="productos"></div>
+
+  <h2>Nombres de todos los productos en minúscula</h2>
+  <div id="nombres-minuscula"></div>
+
+  <script>
+    // Arreglo de productos
+    const productos = [
+      { nombre: 'Teclado', precio: 120 },
+      { nombre: 'Mouse', precio: 80 },
+      { nombre: 'Monitor', precio: 300 },
+      { nombre: 'Parlantes', precio: 90 },
+      { nombre: 'Laptop', precio: 1500 }
+    ];
+
+    // 🔹 Productos con precio mayor a $100
+    const productosCaros = productos.filter(producto => producto.precio > 100);
+
+    // 🔹 Nombres en minúscula
+    const nombresMinuscula = productos.map(producto => producto.nombre.toLowerCase());
+
+    // 🔹 Mostrar productos caros en el DOM
+    const contenedorProductos = document.getElementById('productos');
+
+    productosCaros.forEach(producto => {
+      const item = document.createElement('p');
+      item.textContent = `${producto.nombre}: $${producto.precio}`;
+      contenedorProductos.appendChild(item);
+    });
+
+    // 🔹 Mostrar nombres en minúscula en el DOM
+    const contenedorNombres = document.getElementById('nombres-minuscula');
+
+    nombresMinuscula.forEach(nombre => {
+      const item = document.createElement('p');
+      item.textContent = nombre;
+      contenedorNombres.appendChild(item);
+    });
+  </script>
+</body>
+</html>
+
+	
