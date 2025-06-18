@@ -1,0 +1,11 @@
+
+Los componentes cuando se declaran siempre arrancan con mayúscula y retornan la estetica.
+
+
+
+
+estos archivos ahora tienen la extension jsx.
+
+cd primer-proyect-react
+npm install
+npm run dev
