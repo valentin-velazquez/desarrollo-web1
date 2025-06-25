@@ -7,34 +7,39 @@ import { useEffect, useState } from 'react';
 // con un punto se queda en la carpeta y con 2 se va una carpeta mas atras
 
 function App() {
-  const [character, setCharacters] = useState([])
-//       variable    fun.actualiza            valor inicial
+  const[nombre, setNombre] = useState("");
+ 
+  const handleClick = () =>{
+    console.log(nombre)
+  };
 
-
-  // useEffect va a ejecutar el codigo que se encuentra dentro,
-//tantas veces como se actualizen sus dependencias si no hay
-//dependencias se ejecuta solo antes del primer renderizado
-  useEffect(()=>{
-    fetch('https://rickandmortyapi.com/api/character')
-    .then((data) => data.json())
-    .then((response) => setCharacters(response.results));
-  }, []);
-  
+  const handleInputChange = (event) => {
+    setNombre(event.target.value)
+  };
 
 
 
   return (
   <>
-  {character ? (
-   character.map((item, index) => <p>{item.name}</p>) 
-  ):(<>cargando...</>)
-  
-  }
-  hola mundo
-  <button>aguante boca</button>
-  <Usuario />
-  <Proveedor name={'Vapalepen'}/>
+  <input type="text"
+   placeholder='Escribi tu nombre'
+   onChange={handleInputChange}
+  value={nombre}
+  />
+  <button onClick={handleClick}>Mostrar</button>
+
+{/* si existe el nombre te lo pone abajo */}
+  {nombre  && <h2>{nombre}</h2>}
+
+{/* ifelse, en este caso si esta vacio el input te tira hola y si no chau. */}
+{nombre === "" ? <>hola</> : <>chau</>}
+
   </>);
-}
+
+}// cuando no ponemos el parentesis espera a nosotros hagamos el click en el onclick.
+
+
+
+
 
 export default App//export no nombrado
