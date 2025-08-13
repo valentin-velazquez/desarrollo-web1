@@ -9,6 +9,8 @@ import Capturar from "./components/ejercicios/act2";
 import Temporizador from "./components/ejercicios/act3";
 import Montado from "./components/ejercicios/act3";
 import SimuladorCarga from "./components/ejercicios/act4";
+import { Persona } from "./components/ejemplos de clase/persona";
+
 // con un punto se queda en la carpeta y con 2 se va una carpeta mas atras
 
 function App() {
@@ -30,7 +32,7 @@ function App() {
 
   return (
     <>
-      <input
+      {/* <input
         type="text"
         placeholder="Escribi tu nombre"
         onChange={handleInputChange}
@@ -46,10 +48,11 @@ function App() {
 
       {/* ifelse, en este caso si esta vacio el input te tira hola y si no chau. */}
       {nombre === "" ? <>hola</> : <>chau</>}
-      <Contador></Contador>
+      {/*<Contador></Contador>
       <Capturar></Capturar>
       <Montado></Montado>
-      <SimuladorCarga></SimuladorCarga>
+      <SimuladorCarga></SimuladorCarga> */}
+      <Persona nombre={"PEPITO"}/>
     </>
   );
 } // cuando no ponemos el parentesis espera a nosotros hagamos el click en el onclick.
