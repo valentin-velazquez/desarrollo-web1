@@ -1,11 +1,17 @@
 import { useState } from "react";
 
 export function Operator() {
-  const [nums, setNums] = useState([1, 2, 3, 4, 5]);
+  const [num, setNum] = useState([1, 2, 3, 4, 5]);
   const [persona, setPersona] = useState({
     name: "Federico",
     alumno: "Thiago",
   });
+
+  const ultimo = num[num.length - 1]; // siempre toma el último
+
+  function agregarNumero() {
+    setNum([...num, ultimo + 1]);
+  }
 
   //arrow function
   const addNums = () => {
@@ -23,7 +29,7 @@ export function Operator() {
         <p key={index}>{num}</p>
       ))}
       <h3>Spread Operator</h3>
-      <button onClick={addNums}>agregar numeros</button>
+      <button onClick={agregarNumero}>agregar numeros</button>
       <button onClick={updateName}>modificar persona</button>
     </>
   );
